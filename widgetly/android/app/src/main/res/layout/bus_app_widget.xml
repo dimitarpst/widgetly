@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_bg"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Б1 Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- Bus badge -->
+        <TextView
+            android:id="@+id/bus_line"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/circle_bg"
+            android:text="Б1"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Times -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/next_departure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 мин"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/future_departure1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 мин"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/future_departure2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 мин"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Divider -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#333333"
+    android:layout_marginBottom="8dp"
+    android:text="" />
+
+
+    <!-- Б11 Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Bus badge -->
+        <TextView
+            android:id="@+id/bus_line2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/circle_bg"
+            android:text="Б11"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Times -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/next_departure2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 мин"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/future_departure2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 мин"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/future_departure3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 мин"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
