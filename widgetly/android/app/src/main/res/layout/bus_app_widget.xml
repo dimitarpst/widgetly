@@ -12,65 +12,81 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="8dp">
+        android:gravity="center_vertical">
 
-        <!-- Bus badge -->
+        <!-- Bus label box -->
         <TextView
             android:id="@+id/bus_line"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:gravity="center"
-            android:background="@drawable/circle_bg"
+            android:background="@drawable/line_circle_b1"
             android:text="Б1"
             android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"/>
 
-        <!-- Times -->
+        <!-- Times row -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="12dp">
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/next_departure"
-                android:layout_width="wrap_content"
+            <!-- Time box 1 -->
+            <LinearLayout
+                android:id="@+id/timebox1_line1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="3 мин"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginEnd="12dp" />
+                android:layout_weight="1"
+                style="@style/TimeBox">
+                <TextView
+                    android:id="@+id/rel1_time1"
+                    style="@style/TimeRelative"/>
+                <TextView
+                    android:id="@+id/abs1_time1"
+                    style="@style/TimeAbsolute"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/future_departure1"
-                android:layout_width="wrap_content"
+            <!-- Time box 2 -->
+            <LinearLayout
+                android:id="@+id/timebox2_line1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="7 мин"
-                android:textColor="#AAAAAA"
-                android:textSize="14sp"
-                android:layout_marginEnd="12dp" />
+                android:layout_weight="1"
+                style="@style/TimeBox">
+                <TextView
+                    android:id="@+id/rel1_time2"
+                    style="@style/TimeRelative"/>
+                <TextView
+                    android:id="@+id/abs1_time2"
+                    style="@style/TimeAbsolute"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/future_departure2"
-                android:layout_width="wrap_content"
+            <!-- Time box 3 -->
+            <LinearLayout
+                android:id="@+id/timebox3_line1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="18 мин"
-                android:textColor="#666666"
-                android:textSize="14sp" />
+                android:layout_weight="1"
+                style="@style/TimeBox">
+                <TextView
+                    android:id="@+id/rel1_time3"
+                    style="@style/TimeRelative"/>
+                <TextView
+                    android:id="@+id/abs1_time3"
+                    style="@style/TimeAbsolute"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Divider -->
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="1dp"
-    android:background="#333333"
-    android:layout_marginBottom="8dp"
-    android:text="" />
-
+    <!-- Divider (flush, no extra margins) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/divider"
+        android:layout_marginVertical="8dp"
+        android:text=""/>
 
     <!-- Б11 Row -->
     <LinearLayout
@@ -79,51 +95,69 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
-        <!-- Bus badge -->
+        <!-- Bus label box -->
         <TextView
             android:id="@+id/bus_line2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:gravity="center"
-            android:background="@drawable/circle_bg"
+            android:background="@drawable/line_circle_b11"
             android:text="Б11"
             android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"/>
 
-        <!-- Times -->
+        <!-- Times row -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="12dp">
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/next_departure2"
-                android:layout_width="wrap_content"
+            <!-- Time box 1 -->
+            <LinearLayout
+                android:id="@+id/timebox1_line2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="5 мин"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginEnd="12dp" />
+                android:layout_weight="1"
+                style="@style/TimeBox">
+                <TextView
+                    android:id="@+id/rel2_time1"
+                    style="@style/TimeRelative"/>
+                <TextView
+                    android:id="@+id/abs2_time1"
+                    style="@style/TimeAbsolute"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/future_departure2"
-                android:layout_width="wrap_content"
+            <!-- Time box 2 -->
+            <LinearLayout
+                android:id="@+id/timebox2_line2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="12 мин"
-                android:textColor="#AAAAAA"
-                android:textSize="14sp"
-                android:layout_marginEnd="12dp" />
+                android:layout_weight="1"
+                style="@style/TimeBox">
+                <TextView
+                    android:id="@+id/rel2_time2"
+                    style="@style/TimeRelative"/>
+                <TextView
+                    android:id="@+id/abs2_time2"
+                    style="@style/TimeAbsolute"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/future_departure3"
-                android:layout_width="wrap_content"
+            <!-- Time box 3 -->
+            <LinearLayout
+                android:id="@+id/timebox3_line2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="25 мин"
-                android:textColor="#666666"
-                android:textSize="14sp" />
+                android:layout_weight="1"
+                style="@style/TimeBox">
+                <TextView
+                    android:id="@+id/rel2_time3"
+                    style="@style/TimeRelative"/>
+                <TextView
+                    android:id="@+id/abs2_time3"
+                    style="@style/TimeAbsolute"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

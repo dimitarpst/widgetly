@@ -533,8 +533,8 @@ class _BusWidgetCardState extends State<BusWidgetCard> {
         ? BusSchedules.b11Weekend
         : BusSchedules.b11Weekday;
 
-    final b1Next = getNextDepartures(b1Schedule, 2);
-    final b11Next = getNextDepartures(b11Schedule, 2);
+    final b1Next = getNextDepartures(b1Schedule, 3);
+    final b11Next = getNextDepartures(b11Schedule, 3);
     WidgetUpdater.updateBusWidget(
       line1: "Б1",
       nextTimes1: b1Next,
